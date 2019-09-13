@@ -112,7 +112,7 @@ class Boid {
                 total++;
             }
             if (total > 0) {
-                // alignForce.sub(this.velocity);
+                alignForce.sub(this.position);
                 cohForce.sub(this.position);
                 alignForce.setMag(this.maxSpeed);
                 alignForce.div(total);
